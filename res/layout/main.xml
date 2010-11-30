@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+	<LinearLayout android:id="@+id/main_buttons" 
+		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_centerInParent="true">
+
+    	<Button android:id="@+id/main_scan_barcode"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="0.5"
+    		android:text="@string/main_scan_barcode" />
+
+		<Button android:id="@+id/main_share"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="0.5"
+    		android:text="@string/main_share" />
+    		
+	</LinearLayout>
+
+	<TextView android:id="@+id/main_text_result"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:layout_below="@id/main_buttons"
+    	android:layout_marginTop="40dp"
+    	android:background="#FFFFFF"
+    	android:textColor="#000000"
+    	android:scrollbarStyle="insideInset"
+    	android:textSize="15sp"
+    	android:maxLines="4"
+    	android:autoLink="all"
+    	android:text="@string/main_default_text" />
+
+</RelativeLayout>

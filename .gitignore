@@ -1,0 +1,8 @@
+bin
+.directory
+.DS_Store
+*.class
+*~
+gen
+.settings
+.classpath
