@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nasatrainedmonkeys.sharecontact;
+package com.nasatrainedmonkeys.sharecontact.barcodescanner;
 
 import android.app.Activity;
 import android.app.AlertDialog;

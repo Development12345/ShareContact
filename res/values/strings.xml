@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ShareContact</string>
+    <string name="splash_text">Welcome to ShareContact!</string>
     <string name="main_scan_barcode">Scan card</string>
     <string name="main_share">Share</string>
     <string name="main_default_text">No personal card scanned yet</string>

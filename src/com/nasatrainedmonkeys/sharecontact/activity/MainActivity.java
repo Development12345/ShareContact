@@ -1,6 +1,7 @@
-package com.nasatrainedmonkeys.sharecontact;
+package com.nasatrainedmonkeys.sharecontact.activity;
 
-import android.app.Activity;
+import roboguice.activity.RoboActivity;
+import roboguice.inject.InjectView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,9 +10,18 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends Activity {
+import com.nasatrainedmonkeys.sharecontact.R;
+import com.nasatrainedmonkeys.sharecontact.barcodescanner.IntentIntegrator;
+
+public class MainActivity extends RoboActivity {
+
+	@InjectView(R.id.main_scan_barcode)
 	private Button mScanButton;
+
+	@InjectView(R.id.main_share)
 	private Button mShareButton;
+
+	@InjectView(R.id.main_text_result)
 	private TextView mScanResult;
 
 	@Override
@@ -22,7 +32,6 @@ public class MainActivity extends Activity {
 	}
 
 	private void getWidgets() {
-		mScanButton = (Button) findViewById(R.id.main_scan_barcode);
 		mScanButton.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -31,7 +40,6 @@ public class MainActivity extends Activity {
 			}
 		});
 
-		mShareButton = (Button) findViewById(R.id.main_share);
 		mShareButton.setOnClickListener(new OnClickListener() {
 
 			@Override
